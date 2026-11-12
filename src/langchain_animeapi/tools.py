@@ -50,8 +50,8 @@ class AnimeAPIGenerateImage(BaseTool):
     name: str = "animeapi_generate_image"
     description: str = (
         "Generate one anime-style image from a text description and return its URL. "
-        "Costs $0.003 per image on the default model. Describe the subject, appearance, pose, setting and lighting "
-        "in plain English. Adult content is not available; explicit prompts are refused and not charged."
+        "Costs $0.003 per image on the default model. Describe the subject, appearance, pose, "
+        "setting and lighting in plain English. Adult content is not available; explicit prompts are refused and not charged."
     )
     args_schema: Type[BaseModel] = AnimeAPIGenerateImageInput
     response_format: Literal["content", "content_and_artifact"] = "content_and_artifact"
